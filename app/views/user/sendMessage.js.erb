@@ -43,7 +43,7 @@ function showAnswers() {
 
   // Add basic cards by chatbot to conversation
   <% for i in 0..params[:basicCardsTexts].length-1 %>
-    $('.conversation').append("<li class='him'><%=params[:basicCardsTexts][i]%><br><a href='<%=params[:basicCardsLinkUrls][i]%>' target='_blank'><img src='<%=params[:basicCardsImgUrls][i]%>' style='width:100px; margin: 3px 0px; border: solid 1px; border-color: grey; display: block;margin-left: auto;margin-right: auto;' alt='Missing image'></a><center><a href='<%=params[:basicCardsLinkUrls][i]%>' target='_blank'><%=params[:basicCardsLinkTexts][i]%></a></center></li>");
+    $('.conversation').append("<li class='him'><%=params[:basicCardsTexts][i]%><br><a href='<%=params[:basicCardsLinkUrls][i]%>' target='_blank'><img src='<%=params[:basicCardsImgUrls][i]%>' style='width:100%; margin: 3px 0px; border: solid 1px; border-color: grey; display: block;margin-left: auto;margin-right: auto;' alt='Missing image'></a><center><a href='<%=params[:basicCardsLinkUrls][i]%>' target='_blank'><%=params[:basicCardsLinkTexts][i]%></a></center></li>");
   <%end%>
 
   // Hide quick response container if no quick response has been received and it is visible
