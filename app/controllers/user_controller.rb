@@ -5,7 +5,7 @@ class UserController < ApplicationController
         ### DEFINE CLIENT TOKEN ###
 
         # Create client
-        client = ApiAiRuby::Client.new(:client_access_token => 'e4fd5be725fa471d9542fc34a41c34db', api_lang: 'DE')
+        client = ApiAiRuby::Client.new(:client_access_token => '82007c8e233541e284206c3c5e11d5e0', api_lang: 'DE')
 
         # Prepare message contexts to be sent to Dialogflow
         messageContextsObjects = []
